@@ -37,7 +37,7 @@ For Twitter posting.
         message.parameters.push(["oauth_nonce", nonce]);
         message.parameters.push(["oauth_signature_method", "HMAC-SHA1"]);
         
-        
+        //lets create signature
         oauth.SignatureMethod.sign(message, accessor);
         var normPar = oauth.SignatureMethod.normalizeParameters(message.parameters);
         console.log("Normalized Parameters: "+normPar);
