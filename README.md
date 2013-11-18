@@ -60,7 +60,7 @@ For Twitter posting.
 	        "Authorization": 'OAuth oauth_consumer_key="xxxxxxxxxxxxxxxxx", oauth_nonce='+nonce+', oauth_signature='+encodedSig+', oauth_signature_method="HMAC-SHA1", oauth_timestamp='+timestamp+',oauth_token="xxxxxxxxxxxxxxxxxxxxxxx", oauth_version="1.0"'
        },
        body: {
-      	 "status" : status,      
+      	 "status" : postSummary,      
        },
        success: function(httpResponse) {
       	 response.success(httpResponse.text);
