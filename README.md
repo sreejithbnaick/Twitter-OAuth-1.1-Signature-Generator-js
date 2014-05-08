@@ -86,7 +86,7 @@ For Twitter posting.
 	
 For getting timeline:
 
-	Parse.Cloud.define("Twitter", function(request, response) {
+	Parse.Cloud.define("Timeline", function(request, response) {
 		var urlLink = 'https://api.twitter.com/1.1/statuses/home_timeline.json';
 	
 		var consumerSecret = "<your_consumer_secret_key>";
