@@ -137,7 +137,6 @@ For getting timeline:
 				"Authorization": 'OAuth oauth_consumer_key="<your_oauth_consumer_key>", oauth_nonce=' + nonce + ', oauth_signature=' + encodedSig + ', oauth_signature_method="HMAC-SHA1", oauth_timestamp=' + timestamp + ',oauth_token="your_twitter_oauth_token_here", oauth_version="1.0"'
 			},
 			body: {
-				"status": postSummary,
 			},
 			success: function(httpResponse) {
 				response.success(httpResponse.text);
