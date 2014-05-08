@@ -24,10 +24,10 @@ For Twitter posting.
 	
 		var postSummary = request.params.status;
 		var status = oauth.percentEncode(postSummary);
-		var consumerSecret = "<your_consumer_secret_key>";
+		var consumerSecret = "<your_consumer_secret>";
 		var tokenSecret = "<your_secret_token_here>";
 		var oauth_consumer_key = "<your_oauth_consumer_key>";
-		var oauth_token = "<your_twitter_oauth_token_here>";
+		var oauth_token = "<your_oauth_token_here>";
 	
 		var nonce = oauth.nonce(32);
 		var ts = Math.floor(new Date().getTime() / 1000);
@@ -89,10 +89,10 @@ For getting timeline:
 	Parse.Cloud.define("Timeline", function(request, response) {
 		var urlLink = 'https://api.twitter.com/1.1/statuses/home_timeline.json';
 	
-		var consumerSecret = "<your_consumer_secret_key>";
+		var consumerSecret = "<your_consumer_secret>";
 		var tokenSecret = "<your_secret_token_here>";
 		var oauth_consumer_key = "<your_oauth_consumer_key>";
-		var oauth_token = "<your_twitter_oauth_token_here>";
+		var oauth_token = "<your_oauth_token_here>";
 	
 		var nonce = oauth.nonce(32);
 		var ts = Math.floor(new Date().getTime() / 1000);
