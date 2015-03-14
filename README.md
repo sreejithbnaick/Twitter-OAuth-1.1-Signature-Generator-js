@@ -1,4 +1,4 @@
-OAuth 1.1 Header/Signature Generator, js library for Parse Cloud code
+OAuth 1.1 Header/Signature Generator, js library for Parse Cloud code (Not Maintaining)
 =================================================================
 
 Javascript library for Oauth 1.1 Header & signature generation (Twitter mainly),.
