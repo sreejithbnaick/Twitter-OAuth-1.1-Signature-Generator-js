@@ -147,7 +147,7 @@ For getting timeline:
 	
 For deleting a particular tweet:
 
-	Parse.Cloud.define("Timeline", function(request, response) {
+	Parse.Cloud.define("Delete", function(request, response) {
 		var urlLink = 'https://api.twitter.com/1.1/statuses/destroy/'+request.params.id+'.json';
 	
 		var consumerSecret = "<your_consumer_secret>";
@@ -209,7 +209,7 @@ For deleting a particular tweet:
 	});
 
 
-Retreiving User Timeline
+Retreiving User Timeline:
 
 	Parse.Cloud.define("UserTimeline", function(request, response) {
 	        var screen_name = <screen_name>
